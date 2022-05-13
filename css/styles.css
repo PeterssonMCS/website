@@ -77,37 +77,49 @@
 
 #Informacoes{
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 60%;    
 }
 
 .referencias {
     background-color: rgba(0,0,0,0);
-    flex: none;
+    display: flex;
+    flex: auto;
     padding: 40px;
 }
 
-.social_network {
-    background-color: rgba(255,255,255,0);
+#Pessoais{
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+#foto{
+    padding-top: 40px;
     display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#redes_sociais{
+    display: flex;
+    gap: 20px;
     justify-content: center;
 }
 
 .topicos{
     text-align: center;
-    font-size: 20px;
+    font-size: 32px;
+    padding-top: 20px;
     padding-bottom: 20px;
     color: orangered;
 }
 
-#informacao{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 15%;
-    margin-right: 15%;
+#Tecnicas{
+    padding-bottom: 20px;
+    margin-right: 20%;
     justify-content: center;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 20px;
+    font-size: 24px;
     color: orangered;
 }
 
