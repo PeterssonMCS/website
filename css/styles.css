@@ -1,7 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color:black;
 }
+
+#navegacao{
+    position: fixed;
+    background-color: orangered;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition:1s;
+    z-index: 2;
+}
+
+#logo{
+    position: relative;
+    background-color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:1s;
+}
+
+#lista{
+    background-color: inherit;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista_links{
+    background-color: inherit;
+    position: relative;
+    list-style: none;
+}
+
+.nav_links{
+    font-size: 20px;
+    background-color: inherit;
+    position: relative;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
 
 #Nome{
     background-color: rgba(0,0,0,0);
@@ -14,14 +66,18 @@
     font-size: 30px;
 }
 
-#cabecalho {
+#Banner {
     text-align: center;
-    background-size: cover; 
-    height: 360px; 
-    padding-top: 140px; 
-    color: black;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px; 
     background-image: url("../images/girl.jpg");
     opacity: 0.9;
+}
+
+#Informacoes{
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
 .referencias {
@@ -31,21 +87,32 @@
 }
 
 .social_network {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(255,255,255,0);
     display: flex;
     justify-content: center;
 }
 
-#sobre{
+.topicos{
     text-align: center;
     font-size: 20px;
+    padding-bottom: 20px;
     color: orangered;
 }
 
 #informacao{
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-left: 15%;
     margin-right: 15%;
     justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
     font-size: 20px;
     color: orangered;
 }
+
+#habilidades{
+    margin-left: 15%;
+    color: orangered;
+}
+
