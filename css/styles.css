@@ -141,3 +141,10 @@
 .habilidade:hover{
     color: white;
 }
+
+#picture{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+}
