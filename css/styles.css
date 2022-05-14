@@ -23,6 +23,7 @@
     z-index: 2;
 }
 
+/*
 #logo{
     position: relative;
     background-color: inherit;
@@ -31,6 +32,7 @@
     text-transform: uppercase;
     transition:1s;
 }
+*/
 
 #lista{
     background-color: inherit;
@@ -120,11 +122,22 @@
     text-align: justify;
     text-justify: inter-word;
     font-size: 24px;
-    color: orangered;
+    color: white;
 }
 
 #habilidades{
     margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:none;
+}
+
+.habilidade{
     color: orangered;
 }
 
+.habilidade:hover{
+    color: white;
+}
