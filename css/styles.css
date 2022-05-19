@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 *{
@@ -150,4 +151,157 @@
     height: 20px;
     width : 0%;
     background-color: gray;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color:black;
+}
+
+#navegacao{
+    font-weight: bold;
+    position: fixed;
+    background-color: orangered;
+    top:0;
+    left:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    transition:1s;
+    z-index: 2;
+}
+
+/*
+#logo{
+    position: relative;
+    background-color: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:1s;
+}
+*/
+
+#lista{
+    background-color: inherit;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista_links{
+    background-color: inherit;
+    position: relative;
+    list-style: none;
+}
+
+.nav_links{
+    font-size: 20px;
+    background-color: inherit;
+    position: relative;
+    margin: 0px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#Nome{
+    background-color: rgba(0,0,0,0);
+    margin: 40px;
+    font-size: 40px;
+}
+
+#Profissao{
+    background-color: rgba(0,0,0,0);
+    font-size: 30px;
+}
+
+#Banner {
+    font-weight: bold;
+    text-align: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url("../images/girl.jpg");
+    opacity: 0.9;
+}
+
+#Informacoes{
+    display: grid;
+    grid-template-columns: 40% 60%;    
+}
+
+.referencias {
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    flex: auto;
+    padding: 40px;
+}
+
+#Pessoais{
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+#foto{
+    padding-top: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#redes_sociais{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.topicos{
+    text-align: center;
+    font-size: 32px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: orangered;
+}
+
+#Tecnicas{
+    padding-bottom: 20px;
+    margin-right: 20%;
+    justify-content: center;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 24px;
+    color: white;
+}
+
+#habilidades{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style:none;
+}
+
+.habilidade{
+    color: orangered;
+}
+
+.habilidade:hover{
+    color: white;
+}
+
+#picture{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+>>>>>>> 2c57fba475159091e3f2b3527e4a8694f73bba17
 }
