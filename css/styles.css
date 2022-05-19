@@ -5,11 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: white;
     background-color:black;
 }
 
 #navegacao{
+    font-weight: bold;
     position: fixed;
     background-color: orangered;
     top:0;
@@ -53,6 +53,7 @@
     background-color: inherit;
     position: relative;
     margin: 0px 20px;
+    color: white;
     text-decoration: none;
 }
 
@@ -69,10 +70,11 @@
 }
 
 #Banner {
+    font-weight: bold;
     text-align: center;
     background-size: cover;
     padding-top: 200px;
-    padding-bottom: 200px; 
+    padding-bottom: 200px;
     background-image: url("../images/girl.jpg");
     opacity: 0.9;
 }
