@@ -1,23 +1,33 @@
-<<<<<<< HEAD
-barras = document.querySelectorAll(".barras");
+var habilidades = [70,50,70,90,80,100,70];
+var i = 1;
 
-for(n in barras){
-    n.style.width = "10%";
-=======
-function mudarImagem(input){
-    document.getElementById("picture").src = input;
-}
-
-var imagens = ["images/Cplusplus.png","images/CSS3.png","images/girl.jpg"];
-
-let i = 0;
-function iterarImagens(){
-    if(i < 2) {
-        i++;
+function alterarBarra(){
+    let barras = document.querySelectorAll(".barras");
+    let k = 0;
+    barras.forEach(barra => {
+        if (habilidades[k] > i){
+            barra.style.width = i+"%";
+        }
+        k = k+1;
+    });
+    if (i < 100){
+        i = i+1;
+        setTimeout(alterarBarra,10);
     }else{
-        i = 0;
+        i = 100;
     }
-    document.getElementById("picture").src = imagens[i];
-    setTimeout(iterarImagens,2000);
->>>>>>> 2c57fba475159091e3f2b3527e4a8694f73bba17
 }
+
+//Adiciona o evento que verifica a box habilidades esta visivel
+window.addEventListener('scroll', function() {
+	//cria a variavel contendo a box
+    let box_habilidades = document.querySelector('.habilidades');
+    //extrai seus limites
+	let limite = box_habilidades.getBoundingClientRect();
+    //compara os limites para verificar se a box esta completamente visivel
+	if(limite.top >= 0 && limite.bottom <= window.innerHeight) {
+		alterarBarra();
+	}
+});
+
+
