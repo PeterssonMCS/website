@@ -146,3 +146,29 @@
     width : 0%;
     background-color: orangered;
 }
+
+#trajetoria{
+    margin-left: 10%;
+    margin-right: 10%;
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.ano{
+    color:orangered;
+}
+
+.ano:hover{
+    color:white;
+}
+
+#Rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: orangered;
+    color: white;
+}
