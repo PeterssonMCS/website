@@ -172,3 +172,10 @@
     background-color: orangered;
     color: white;
 }
+
+#imagem_ano{
+    height: 480px;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}

@@ -30,4 +30,6 @@ window.addEventListener('scroll', function() {
 	}
 });
 
-
+function alterarImg(input){
+    document.getElementById('anos').src=input;
+}
