@@ -1,9 +1,12 @@
 var habilidades = [70,50,70,90,80,100,70];
 var i = 1;
 
+//Modifica o tamanho das barras de acordo com os valores na variavel habilidades
 function alterarBarra(){
+    //extrai todas as barras
     let barras = document.querySelectorAll(".barras");
     let k = 0;
+    //Modifica o tamanho individual de cada barra
     barras.forEach(barra => {
         if (habilidades[k] > i){
             barra.style.width = i+"%";
@@ -30,6 +33,7 @@ window.addEventListener('scroll', function() {
 	}
 });
 
+//altera o source da imagem para o endereço em input 
 function alterarImg(input){
     document.getElementById('anos').src=input;
 }
