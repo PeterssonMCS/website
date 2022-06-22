@@ -197,3 +197,15 @@
     color: white;
 }
 
+#projetos{
+    padding-top: 80px;
+    display: grid;
+    justify-content:space-evenly;
+    gap:10px;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.imagem-projeto{
+    display: flex;
+    width: 100%;
+}
