@@ -86,11 +86,15 @@
     grid-template-rows: 80% 20%;
 }
 
-#foto{
-    padding-top: 40px;
+#local-foto{
+    padding-top: 120px;
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+#foto{
+    clip-path: circle(40% at 50% 40%);
 }
 
 #redes_sociais{
@@ -185,16 +189,20 @@
     display: flex;
     width: 100%;
     transition: all 0.5s ease-in-out;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
+    filter: blur(10px);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+
 }
 
 .imagem-projeto:hover{
     transition: all 0.5s ease-in-out;
-    -webkit-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    transform: scale(0.6);
+    filter: blur();
+    clip-path: none;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 
 #habilidade{
