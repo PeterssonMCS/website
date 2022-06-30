@@ -180,6 +180,7 @@
     padding-top: 80px;
     display: grid;
     justify-items: center;
+    align-items: center;
     justify-content:space-between;
     gap:40px;
     grid-template-columns: 30% 30% 30%;
