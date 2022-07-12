@@ -252,6 +252,7 @@
 }
 
 .swiper-slide{
+
 }
 
 .swiper-button-prev{
@@ -260,4 +261,42 @@
 
 .swiper-button-next{
     background-color: rgba(0,0,0,0);
+}
+
+.waviy {
+    position: relative;
+}
+
+.waviy span{
+    position: relative;
+    background-color: rgba(0,0,0,0);
+    display: inline-block;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+
+.flipX{
+    animation: 10s anim-flipX ease infinite;
+}
+
+@keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      /* animate nothing to pause animation at the end */
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
 }
