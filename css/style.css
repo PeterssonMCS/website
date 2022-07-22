@@ -93,17 +93,6 @@
     font-size: large;
 }
 
-
-#projetos{
-    padding-top: 80px;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content:space-between;
-    gap:40px;
-    grid-template-columns: 30% 30% 30%;
-}
-
 .imagem-projeto{
     display: flex;
     width: 100%;
@@ -122,4 +111,19 @@
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+}
+
+.imagem-projeto-sm{
+    display: flex;
+    width: 100%;
+}
+
+.container-projetos{
+    padding-top: 80px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content:space-between;
+    gap:40px;
+    grid-template-columns: 30% 30% 30%;
 }
