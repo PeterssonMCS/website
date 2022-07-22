@@ -101,7 +101,11 @@
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5);
+}
 
+.imagem-projeto-sm{
+    display: flex;
+    width: 100%;
 }
 
 .imagem-projeto:hover{
@@ -118,7 +122,7 @@
     width: 100%;
 }
 
-.container-projetos{
+#projetos{
     padding-top: 80px;
     display: grid;
     justify-items: center;
