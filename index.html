@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-    <html lang="pt">
+    <html lang="en">
         <head>
-            <title>Home</title>
-            <link rel="stylesheet" href="css/styles.css">
-            <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Home</title>
+            <link rel="stylesheet" href="css/style.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         </head>
+
         <body>
-            <nav id="navegacao">
-                <div class="lista_links"></div>
-                <ul id="lista">
-                    <li class="lista_links">
-                        <a href = "index.html" class="nav_links">Home</a>
-                    </li>
-                    <li class="lista_links">
-                        <a href = "projetos.html " class="nav_links">Projetos</a>
-                    </li>
-                    <li class="lista_links">
-                        <a href = "contato.html " class="nav_links">Contato</a>
-                    </li>
-                </ul>    
+            <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark text-white">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="navbar-brand"><img src="bitmap/tl.png"  id="image" width="48px"></div>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="projetos.html">Projetos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contato.html">Contato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
             </nav>
-        
-            <section id="Banner">
+
+            <div class="container-fluid bg-dark" id="banner">
                 <div class="waviy" id="Nome">
                     <span style="--i:1">P</span>
                     <span style="--i:2">e</span>
@@ -41,97 +50,86 @@
                     <span style="--i:14">s</span>
                 </div>        
                 <div id="Profissao">Engenheiro Eletrônico | Desenvolvedor Full Stack</div>
-            </section>
+            </div>
 
-            <section id="Informacoes">              
-                <div id = "Pessoais">
-                    <div id="local-foto">
-                        <img src="images/foto.png" height = "200" alt="Foto Petersson" id="foto">
+            <div class="container-fluid bg-dark text-white pt-5">
+                <div class="row">
+                  <div class="col-sm-2 align-self-center">
+                    <img src="imagens/foto.png" id="foto" class="d-none d-sm-block">
+                    <div class="d-flex flex-row bd-highlight mb-3">
+                        <a class="p-3" href="https://github.com/PeterssonMCS"><img src="imagens/logo_github.png" class="img-logo"></a>
+                        <a class="p-3" href="https://www.linkedin.com/in/peterssonsantana/"><img src="imagens/logo_linkedin.png" class="img-logo"></a>
                     </div>
-                    
-                    <div id="redes_sociais">
-                        <a href="https://www.linkedin.com/in/peterssonsantana/">
-                            <img src="images/logo_linkedin.png" alt="Logo do Linkedin" width="34" height="34">
-                        </a>
-                        <a href="https://github.com/PeterssonMCS">
-                            <img src="images/logo_github.png" alt="Logo do Github" width="34" height="34">
-                        </a>
+                    <hr class="d-sm-none">
+                  </div>
+
+                  <div class="col-sm-10 align-self-center ml-2">
+                    <h4>Formado em Engenharia Eletrônica pela Universidade Federal de Sergipe, 
+                        onde participei de diversos projetos de pesquisa e extensão nas áreas 
+                        de robótica, instrumentação, controle e sistemas embarcados. Atualmente
+                        sou desenvolvedor Full Stack freelancer, em que atuo na melhoria e 
+                        desenvolvimento de soluções web, desktop e embarcadas.
+                    </h4>
+                  </div>
+                </div>
+            </div>
+
+            <div class="container-fluid bg-dark text-white">
+              <h1 class="pt-5">Habilidades</h1>
+                <div class="row">
+                    <div class="col-sm-6" id="imagens-habilidades">
+                        <img src = "imagens/html_logo.png" class="imagem-habilidade" alt="Logo HTML" onmouseleave="alterarTexto('default')"  onmouseenter="alterarTexto('html')">        
+                        <img src = "imagens/logo_css.png" class="imagem-habilidade" alt="Logo CSS" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('css')">
+                        <img src = "imagens/javascript_logo.png" class="imagem-habilidade" alt="Logo Javascript" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('javascript')">
+                        
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Expert</div>
+                        </div>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Avançado</div>
+                        </div>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Avançado</div>
+                        </div>
+
+                        <img src = "imagens/cpluplus_logo.png" class="imagem-habilidade" alt="Logo C++" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('cplusplus')">
+                        <img src = "imagens/logo_qt.png" class="imagem-habilidade" alt="Logo Qt" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('qt')">
+                        <img src = "imagens/python_logo.png" class="imagem-habilidade" alt="Logo Python" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('python')">
+
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Avançado</div>
+                        </div>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Avançado</div>
+                        </div>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Intermediário</div>
+                        </div>
+
+                        <img src = "imagens/php_logo.png" class="imagem-habilidade" alt="Logo PHP" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('php')">
+                        <img src = "imagens/logo_matlab.png" class="imagem-habilidade" alt="Logo Matlab" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('matlab')">
+                        <img src = "imagens/logo_github.png" class="imagem-habilidade" alt="Logo Github" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('github')">
+                        
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Intermediário</div>
+                        </div>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Expert</div>
+                        </div>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="barra-progresso">Avançado</div>
+                        </div> 
+
+                    </div>
+                    <div class="col-sm-6 align-self-center">
+                      <p id="texto-habilidades" >/* Passe o mouse para saber mais */</p>
                     </div>
                 </div>
+            </div>
 
-                <div id="Tecnicas">
-                    <h1 class="topicos">Sobre</h1>
-                    Formado em Engenharia Eletrônica pela Universidade Federal de Sergipe, onde participei de 
-                    diversos projetos de pesquisa e extensão nas áreas de robótica, instrumentação, controle e
-                    sistemas embarcados. Atualmente sou desenvolvedor Full Stack freelancer, em que atuo na 
-                    melhoria e desenvolvimento de soluções web, desktop e embarcadas.
-                </div>
-            </section >
-
-            <h1 class = "topicos">Habilidades</h1>
-            
-            <section id ="habilidade">
-                <div id="imagens-habilidades">
-                
-                    <img src = "images/html_logo.png" class="imagem-habilidade" alt="Logo HTML" onmouseleave="alterarTexto('default')"  onmouseenter="alterarTexto('html')">
-                    <img src = "images/logo_css.png" class="imagem-habilidade" alt="Logo CSS" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('css')">
-                    <img src = "images/javascript_logo.png" class="imagem-habilidade" alt="Logo Javascript" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('javascript')">
-                    <img src = "images/cpluplus_logo.png" class="imagem-habilidade" alt="Logo C++" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('cplusplus')">
-                    <img src = "images/logo_qt.png" class="imagem-habilidade" alt="Logo Qt" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('qt')">
-                    <img src = "images/python_logo.png" class="imagem-habilidade" alt="Logo Python" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('python')">
-                    <img src = "images/php_logo.png" class="imagem-habilidade" alt="Logo PHP" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('php')">
-                    <img src = "images/logo_matlab.png" class="imagem-habilidade" alt="Logo Matlab" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('matlab')">
-                    <img src = "images/logo_github.png" class="imagem-habilidade" alt="Logo Github" onmouseleave="alterarTexto('default')" onmouseenter="alterarTexto('github')">
-                
-                </div>
-                <div id="descricao-habilidades">
-                    <p id="texto-habilidades">/* Passe o mouse para saber mais */</p>
-                </div>
-            </section>
-
-            <section>
-                <h1 class = "topicos">Trajetória</h1>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <img src="images/2012.png" class="swiper-slide">
-                        <img src="images/2013.png" class="swiper-slide">
-                        <img src="images/2014.png" class="swiper-slide">
-                        <img src="images/2015.png" class="swiper-slide">
-                        <img src="images/2016.png" class="swiper-slide">
-                        <img src="images/2017.png" class="swiper-slide">
-                        <img src="images/2018.png" class="swiper-slide">
-                        <img src="images/2019.png" class="swiper-slide">
-                        <img src="images/2020.png" class="swiper-slide">
-                        <img src="images/2021.png" class="swiper-slide">
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </section>
-
-            <section>
-                <h1 class = "topicos">Estatísticas como Freelancer</h1>
-                <ul id="estatisticas">
-                    <li class="estatistica">
-                        <p>Projetos Concluídos</p>
-                        <p>77</p>
-                    </li>
-                    <li class="estatistica">
-                        <p>Clientes Satisfeitos</p>
-                        <p>72</p>
-                    </li>
-                    <li class="estatistica">
-                        <p>Recontratações</p>
-                        <p>14</p>
-                    </li>
-                </div>
-            </section>
-
-            <footer>
-                <div id="Rodape">Petersson Matos Cardoso Santana - 2022</div>
-            </footer>
-
-            <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-            <script src="scripts/scripts.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+            <script src="js/script-bitmap.js"></script>
+            <script src="js/script.js"></script>
         </body>
     </html>
+

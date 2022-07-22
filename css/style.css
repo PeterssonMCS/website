@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    background-size: cover;
+    height: 400px;
+    background-image: url("../imagens/banner.jpg");
+    background-color: black;
+    opacity: 0.9;
+}
+
+#Nome{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    margin: 40px;
+    font-size: 40px;
+}
+
+#Profissao{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 30px;
+}
+
+
+.waviy {
+    position: relative;
+}
+
+.waviy span{
+    position: relative;
+    background-color: rgba(0,0,0,0);
+    display: inline-block;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+
+#foto{
+    width: 100%;
+    border-radius: 50%;
+    height: auto;
+}
+
+.img-logo{
+    max-width: 100%;
+    height: auto;
+}
+
+
+#imagens-habilidades{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 25% 2% 25% 2% 25% 2%;
+    gap:8px;
+    align-content: center;
+}
+
+
+.imagem-habilidade{
+    width:100%;
+    align-self: center;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+.imagem-habilidade:hover{
+    width:100%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+#texto-habilidades{
+    font-size: large;
+}
+
+
+#projetos{
+    padding-top: 80px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content:space-between;
+    gap:40px;
+    grid-template-columns: 30% 30% 30%;
+}
+
+.imagem-projeto{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    filter: blur(10px);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+
+}
+
+.imagem-projeto:hover{
+    transition: all 0.5s ease-in-out;
+    filter: blur();
+    clip-path: none;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
